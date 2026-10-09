@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastType - Fast Typing Test</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo"><span>FAST</span>TYPE</h2>
+        <p>YOUR TYPING ARENA</p>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="eyebrow">LEVEL UP YOUR SKILLS</p>
+            <h1>TYPE <span>FASTER.</span><br>
+                THINK <span>BETTER.</span></h1>
+            <p>Test your speed. Improve your accuracy.</p>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <p>SPEED</p>
+                <h2><span id="wpm">0</span> <small>WPM</small></h2>
+            </div>
+
+            <div class="stat-card">
+                <p>ACCURACY</p>
+                <h2><span id="accuracy">100</span><small>%</small></h2>
+            </div>
+
+            <div class="stat-card">
+                <p>ERRORS</p>
+                <h2 id="errors">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>TIME LEFT</p>
+                <h2><span id="timer">30</span><small> SEC</small></h2>
+            </div>
+
+        </section>
+
+        <section class="game-panel">
+
+            <div class="game-header">
+                <h3>TYPING CHALLENGE</h3>
+
+                <select id="duration">
+                    <option value="15">15 Seconds</option>
+                    <option value="30" selected>30 Seconds</option>
+                    <option value="60">60 Seconds</option>
+                    <option value="120">120 Seconds</option>
+                </select>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress"></div>
+            </div>
+
+            <div id="textDisplay" class="text-display"></div>
+
+            <label for="typingInput">YOUR INPUT</label>
+
+            <textarea
+                id="typingInput"
+                placeholder="Click START TEST, then type here..."
+                rows="4"
+                disabled
+                spellcheck="false"></textarea>
+
+            <div class="buttons">
+                <p id="gameMessage">Press START TEST to begin.</p>
+
+                <button id="restartBtn" class="secondary-btn">
+                    RESET
+                </button>
+
+                <button id="startBtn" class="primary-btn">
+                    START TEST
+                </button>
+            </div>
+
+        </section>
+
+        <section id="resultPanel" class="result-panel" hidden>
+            <h2>CHALLENGE COMPLETE!</h2>
+
+            <p>Typing Speed: <strong id="finalWpm">0 WPM</strong></p>
+            <p>Accuracy: <strong id="finalAccuracy">100%</strong></p>
+            <p>Correct Characters: <strong id="finalCorrect">0</strong></p>
+            <p>Mistakes: <strong id="finalErrors">0</strong></p>
+
+            <button id="againBtn" class="primary-btn">
+                PLAY AGAIN
+            </button>
+        </section>
+
+        <section class="tip">
+            <p>TIP: Focus on accuracy first. Speed improves with practice!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>FAST<span>TYPE</span></h3>
+        <p>TRAIN YOUR FINGERS. UNLEASH YOUR POTENTIAL.</p>
+        <p>© <span id="year"></span> FastType</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
+
+<section class="welcome">
+    <h2>Hello, Friends! 🌸</h2>
+    <img
+    
+    >
+    <p>Welcome to our beautiful website!</p>
+</section>
